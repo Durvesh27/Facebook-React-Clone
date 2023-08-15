@@ -1,0 +1,141 @@
+.register-main-img {
+  width: 30%;
+  height: 102px;
+  display: block;
+  margin: auto;
+}
+.register-body{
+background-color: #F0F2F5;
+width: 100%;
+height: 105vh;
+}
+.register-block {
+  width: 29%;
+  margin: auto;
+  height: 83.5vh;
+  border: none;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 5px;
+}
+.reg-upper-text {
+  text-align: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgb(222, 218, 218);
+}
+.reg-content {
+  padding: 15px;
+}
+.reg-ip-sec1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.reg-sec1-input {
+  padding: 10px;
+  width: 49%;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid rgb(199, 196, 196);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.reg-sec2-input {
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid rgb(199, 196, 196);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.register-dob-text {
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+.register-dob-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.reg-sel {
+  padding: 10px;
+  width: 32%;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid rgb(199, 196, 196);
+  border-radius: 5px;
+}
+.reg-gender-box {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.fz-12px {
+  font-size: 11.8px;
+  margin: 15px 0;
+  color: grey;
+}
+.signup-btn{
+    padding: 10px 60px;
+    display: block;
+    margin: auto;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.reg-last{
+    color: #1877f2;
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: center;
+}
+.form-footer{
+    background-color: #fff;
+    padding-top: 30px;
+}
+.form-footer-top{
+    width: 60%;
+    margin: auto;
+    font-size: 12px;
+}
+.form-footer-top-flex{
+    width: 62%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #385898;
+    padding: 10px 0;
+}
+.form-footer-top-flex li:nth-child(1){
+    color: black;
+}
+.form-footer-down{
+font-size: 12px;
+width: 60%;
+margin: auto;
+}
+.form-footer-down-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    color: #385898;
+    padding: 10px 0;
+    border-top: 1px solid rgb(222, 218, 218);
+    line-height: 20px;
+}
+.form-footer-down-flex>li{
+    margin-right: 20px;
+}
+.reg-footer-last{
+    margin: 10px 0;
+    font-size: 12px;
+}
