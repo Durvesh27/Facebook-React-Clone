@@ -4,6 +4,7 @@ import Register from "./Comonents/User/Register";
 import Home from "./Comonents/Home/Home";
 import CreateStory from "./Comonents/Main/CreateStory";
 import CreatePost from "./Comonents/Main/CreatePost";
+import Profile from "./Comonents/Main/Profile/Profile";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route exact path="/" element={<Home/>}/>
       <Route exact path="/create-story" element={<CreateStory/>}/>
       <Route exact path="/create-post" element={<CreatePost/>}/>
+      <Route exact path="/profile" element={<Profile/>}/>
     </Routes>
     </div>
   );
