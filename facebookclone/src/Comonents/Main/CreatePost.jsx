@@ -2,14 +2,16 @@ import React from "react";
 import "./Post.css";
 import smile from '../../Images/smile.png'
 import dot3 from '../../Images/3dot.png'
-const CreatePost = () => {
+const CreatePost = ({showPost,setShowPost}) => {
   return (
+    <>
+    <div className="background-opacity"></div>
     <div className="create-post">
       <div className="create-post-box">
         <div className="post-box1">
           <h3 className="post-box1-text">Create Post</h3>
           <div className="setting-box box-pos">
-            <i class="fa-solid fa-xmark fa-xl"></i>
+            <i class="fa-solid fa-xmark fa-xl" onClick={()=>setShowPost(!showPost)}></i>
           </div>
         </div>
 
@@ -62,6 +64,7 @@ const CreatePost = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -8,6 +8,13 @@
 .create-post-box {
   width: 32%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  top:150px;
+  left: 550px;
+  z-index: 999;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .post-box1 {
   position: relative;

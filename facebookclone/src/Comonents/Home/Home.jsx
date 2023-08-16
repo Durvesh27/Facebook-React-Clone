@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import friends from "../../Images/friends.png";
 import memories from "../../Images/memories.png";
@@ -17,7 +17,9 @@ import share from "../../Images/forward.png";
 import like from "../../Images/like.png";
 
 import Navbar from "./Navbar";
+import CreatePost from "../Main/CreatePost";
 const Home = () => {
+const[showPost,setShowPost]=useState(false)
   return (
     <div>
       <Navbar />
@@ -100,6 +102,7 @@ const Home = () => {
                   type="text"
                   placeholder="What's on your mind, Durvesh? "
                   className="home21-ip"
+                  onClick={()=>setShowPost(!showPost)}
                 />
               </div>
               <div className="home22">
@@ -266,6 +269,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {
+        showPost &&   <CreatePost showPost={showPost} setShowPost={setShowPost}/>
+      }
     </div>
   );
 };

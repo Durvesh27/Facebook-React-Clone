@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../Home/Navbar";
 import "./Profile.css";
+import { useNavigate } from "react-router-dom";
+import EditProfile from "./EditProfile";
 const Profile = () => {
+const[showEdit,setShowEdit]=useState(false);
+const router=useNavigate();
   return (
-    <div >
+    <div style={{position:"relative"}}>
       <Navbar />
       <div className="user-profile-main">
       <div className="user-profile">
@@ -59,14 +63,14 @@ const Profile = () => {
                       class="fa-solid fa-plus"
                       style={{ marginRight: "7px" }}
                     ></i>
-                    <span>Add to Story</span>
+                    <span onClick={()=>router("/create-story")}>Add to Story</span>
                   </button>
                   <button className="profile-buttons profile-btn2">
                     <i
                       class="fa-solid fa-pen"
                       style={{ marginRight: "7px" }}
                     ></i>
-                    <span>Edit Profile</span>
+                    <span onClick={()=>setShowEdit(!showEdit)}>Edit Profile</span>
                   </button>
                   <span
                     className="profile-buttons angle-down-box"
@@ -104,6 +108,9 @@ const Profile = () => {
         </div>
       </div>
       </div>
+      {
+        showEdit && <EditProfile/>
+      }
     </div>
   );
 };

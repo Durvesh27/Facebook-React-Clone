@@ -1,7 +1,10 @@
 .user-profile-main{
 width: 100%;
-margin-top: 56px;
+/* margin-top: 56px; */
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+position: fixed;
+top: 56px;
+z-index: -1;
 }
 .user-profile{
 width: 70%;
@@ -101,6 +104,7 @@ outline: none;
 border-radius: 5px;
 font-size: 15px;
 font-family: Arial, Helvetica, sans-serif;
+cursor: pointer;
 }
 .profile-btn1{
 background-color: #1A6ED8;
@@ -155,11 +159,11 @@ left:130px
 .profile-bottom-flex p:nth-child(1){
 border-bottom: 3px solid #1A6ED8;
 color:#1A6ED8 ;
-font-weight: 600;
 }
 .profile-bottom-flex-text{
 color: #808285;
 padding: 15px;
+font-weight: 550;
 }
 .profile-3dot{
 width: 48px;
@@ -173,4 +177,157 @@ border-radius: 5px;
 background-color: #D8DADF;
 padding-bottom: 12px;
 box-sizing: border-box;
+}
+
+/* EDIT PROFILE */
+.edit-profile{
+width: 46%;
+/* margin: auto; */
+/* margin-top: 50px; */
+border-radius: 5px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+position: absolute;
+background-color: white;
+top: 56px;
+left: 400px;
+z-index: 999;
+}
+.edit-profile-top{
+padding: 15px;
+position: relative;
+border-bottom: 1px solid #D8DADF;
+}
+.edit-cross{
+background-color: #D8DADF;
+color:#5B626A;
+width: 36px;
+height: 36px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 11px;
+right: 11px;
+}
+.fz20{
+    font-size: 20px;
+}
+.blue-color{
+    color:#1A6ED8 ;
+}
+.edit-profile-content{
+    padding: 15px;
+}
+.edit-profile-1-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit-profile-setup{
+display: flex;
+justify-content: center;
+margin-top: 15px;
+}
+.edit-profile-img{
+    width: 170px;
+    height:170px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.edit-profile-cover{
+width: 75%;
+height:185px;
+background-color: #D8DADF;
+border-radius: 10px;
+margin: auto;
+margin-top: 30px;
+margin-bottom: 40px;
+}
+.avtar-img{
+width: 75%;
+height: 154px;
+}
+.avtar-sec{
+color: #74767A;
+font-size: 13px;
+font-weight: 600;
+}
+.avtar-sec1{
+color: #77787C;
+font-size: 15px;
+margin-top: 12px;
+text-align: center;
+}
+.create-avtar-btn{
+padding: 8px 18px;
+background-color: #DBE7F2;
+color: #056BE1;
+border: none;
+outline: none;
+font-size: 15px;
+font-weight: 600;
+border-radius: 5px;
+display: block;
+margin: auto;
+margin-top: 10px;
+margin-bottom: 30px;
+}
+.describe-text{
+color: #74767A ;
+text-align: center;
+margin: 35px 0;
+font-size: 17px;
+}
+.edit-profile-listItem{
+    display: flex;
+    align-items: center;
+}
+.edit-profile-listItem img{
+width: 20px;
+height:20px;
+margin-right: 10px;
+}
+.edit-profile-list{
+margin-top: 20px;
+line-height: 35px;
+}
+.mtb{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.feature-img{
+width: 50%;
+height: 192px;
+display: block;
+margin: auto;
+/* border: 1px solid red; */
+overflow: hidden;
+}
+.feature-img img{
+width: 100%;
+height: 111%;
+}
+.editAbout-btn{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #DBE7F2;
+    color: #056BE1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.background-opacity{
+background-color: #F6F6F6;
+opacity: 0.8;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 99;
 }

@@ -7,7 +7,9 @@ import multi from  '../../Images/multi.png'
 import bell from  '../../Images/bell.png'
 import profile from  '../../Images/profile.png'
 import message from  '../../Images/message.png'
+import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
+const router=useNavigate()
   return (
 <header>
 <nav className='navbar'>
@@ -35,7 +37,7 @@ const Navbar = () => {
 <img src={multi} alt=""/>
 <img src={message} alt=""/>
 <img src={bell} alt=""/>
-<img src={profile} alt="" />
+<img src={profile} alt="" onClick={()=>router('/profile')} />
 </div>
 </nav>
 </header>
