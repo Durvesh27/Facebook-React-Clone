@@ -1,0 +1,104 @@
+.search-result{
+width: 100%;
+margin-top: 57px;
+/* height: 91.9vh; */
+display: flex;
+}
+.search-result1{
+width: 23%;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+padding: 15px;
+}
+.search-res-text{
+font-size: 24px;
+padding-bottom: 15px;
+border-bottom: 1px solid rgb(198, 195, 195);
+}
+.search-result2{
+width: 77%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #F0F2F5;
+}
+.search-result2-box{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border-radius: 5px;
+width: 58%;
+padding: 15px;
+box-sizing: border-box;
+background-color: white;
+}
+.friend-box-img{
+width: 60px;
+height:60px;
+border-radius: 50%;
+margin-right: 12px;
+}
+.fz15{
+font-size: 15px;
+color:#65676B
+}
+.add-friend-btn{
+    padding: 8px 12px;
+    background-color: #DBE7F2;
+    color: #056BE1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 550;
+}
+.search-result2-flex{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 0;
+}
+.mtbs{
+margin-top: 2px;
+margin-bottom: 3px;
+}
+.see-all-btn{
+width: 100%;
+padding: 8px 12px;
+background-color: #D8DADF;
+border: none;
+outline: none;
+font-size: 14.5px;
+border-radius: 5px;
+font-weight: 550;
+}
+.search-list-item{
+display: flex;
+align-items: center;
+padding: 10px 0;
+}
+.search-list-item:hover{
+background-color: #F0F2F5;
+}
+.search-list-imgContainer{
+width: 36px;
+height: 36px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #D8DADF;
+border-radius: 50%;
+}
+.search-list-img{
+width: 24px;
+height: 21.5px;
+mix-blend-mode: darken;
+}
+.color-blue{
+background-color: #1877F2;
+}
+.search-list-text{
+font-size: 15px;
+font-weight: 600;
+margin-left: 10px;
+}
+.mix{
+mix-blend-mode: hard-light;
+}
